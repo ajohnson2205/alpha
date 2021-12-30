@@ -8,10 +8,10 @@ html(lang='en')
         meta(name='description', content='')
         meta(name='author', content='')
 
-        title Creative - Start Bootstrap Themezzz
+        title Seattle Pet ❤️
 
         // Favicon
-        link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
+        link(rel='icon', type='image/x-icon', href='assets/favicon.ico').jpg
 
         // Bootstrap Icons
         link(href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css', rel='stylesheet')
@@ -31,7 +31,7 @@ html(lang='en')
         // Navigation
         nav#mainNav.navbar.navbar-expand-lg.navbar-light.fixed-top.py-3
             .container.px-4.px-lg-5
-                a.navbar-brand(href='#page-top') Start Bootstrap
+                a.navbar-brand(href='#page-top') SeattlePet.Love
                 button.navbar-toggler.navbar-toggler-right(type='button', data-bs-toggle='collapse', data-bs-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
                     span.navbar-toggler-icon
                 #navbarResponsive.collapse.navbar-collapse
@@ -41,7 +41,7 @@ html(lang='en')
                         li.nav-item
                             a.nav-link(href='#services') Services
                         li.nav-item
-                            a.nav-link(href='#portfolio') Portfolio
+                            a.nav-link(href='#pricing') Pricing
                         li.nav-item
                             a.nav-link(href='#contact') Contact
 
@@ -99,59 +99,132 @@ html(lang='en')
                             h3.h4.mb-2 Made with Love
                             p.text-muted.mb-0 Is it really open source if it's not made with love?
 
-        // Portfolio
-        #portfolio
-            .container-fluid.p-0
-                .row.g-0
-                    .col-lg-4.col-sm-6
-                        a.portfolio-box(href='assets/img/portfolio/fullsize/1.jpg', title='Project Name')
-                            img.img-fluid(src='assets/img/portfolio/thumbnails/1.jpg', alt='...')
-                            .portfolio-box-caption
-                                .project-category.text-white-50
-                                    | Category
-                                .project-name
-                                    | Project Name
-                    .col-lg-4.col-sm-6
-                        a.portfolio-box(href='assets/img/portfolio/fullsize/2.jpg', title='Project Name')
-                            img.img-fluid(src='assets/img/portfolio/thumbnails/2.jpg', alt='...')
-                            .portfolio-box-caption
-                                .project-category.text-white-50
-                                    | Category
-                                .project-name
-                                    | Project Name
-                    .col-lg-4.col-sm-6
-                        a.portfolio-box(href='assets/img/portfolio/fullsize/3.jpg', title='Project Name')
-                            img.img-fluid(src='assets/img/portfolio/thumbnails/3.jpg', alt='...')
-                            .portfolio-box-caption
-                                .project-category.text-white-50
-                                    | Category
-                                .project-name
-                                    | Project Name
-                    .col-lg-4.col-sm-6
-                        a.portfolio-box(href='assets/img/portfolio/fullsize/4.jpg', title='Project Name')
-                            img.img-fluid(src='assets/img/portfolio/thumbnails/4.jpg', alt='...')
-                            .portfolio-box-caption
-                                .project-category.text-white-50
-                                    | Category
-                                .project-name
-                                    | Project Name
-                    .col-lg-4.col-sm-6
-                        a.portfolio-box(href='assets/img/portfolio/fullsize/5.jpg', title='Project Name')
-                            img.img-fluid(src='assets/img/portfolio/thumbnails/5.jpg', alt='...')
-                            .portfolio-box-caption
-                                .project-category.text-white-50
-                                    | Category
-                                .project-name
-                                    | Project Name
-                    .col-lg-4.col-sm-6
-                        a.portfolio-box(href='assets/img/portfolio/fullsize/6.jpg', title='Project Name')
-                            img.img-fluid(src='assets/img/portfolio/thumbnails/6.jpg', alt='...')
-                            .portfolio-box-caption.p-3
-                                .project-category.text-white-50
-                                    | Category
-                                .project-name
-                                    | Project Name
 
+
+        // Pricing section
+        #pricing
+        section.bg-light.py-5.border-bottom
+            .container.px-5.my-5
+                .text-center.mb-5
+                    h2.fw-bolder Pay as you grow
+                    p.lead.mb-0 With our no hassle pricing plans
+                .row.gx-5.justify-content-center
+                    // Pricing card free
+                    .col-lg-6.col-xl-4
+                        .card.mb-5.mb-xl-0
+                            .card-body.p-5
+                                .small.text-uppercase.fw-bold O Hai, K Bye
+                                .small.text-uppercase.fw-bold.text-muted 15 minutes
+                                .mb-3
+                                    span.display-4.fw-bold $15
+                                    span.text-muted / visit
+                                ul.list-unstyled.mb-4
+                                    li.mb-2
+                                        i.bi.bi-check.text-primary
+                                        strong Quick check-in
+                                    li.mb-2
+                                        i.bi.bi-check.text-primary
+                                        | Change food and water
+                                    li.mb-2
+                                        i.bi.bi-check.text-primary
+                                        | Clean litter and/or quick snuggles
+                                    li.mb-2
+                                        i.bi.bi-check.text-primary
+                                        | Cute photo(s) direct to your phone!
+                                    li.mb-2.text-muted
+                                        i.bi.bi-x
+                                        | Unlimited private projects
+                                    li.mb-2.text-muted
+                                        i.bi.bi-x
+                                        | Dedicated support
+                                    li.mb-2.text-muted
+                                        i.bi.bi-x
+                                        | Free linked domain
+                                    li.text-muted
+                                        i.bi.bi-x
+                                        | Monthly status reports
+                                .d-grid
+                                    a.btn.btn-outline-primary(href='#!') Choose plan
+                    // Pricing card pro
+                    .col-lg-6.col-xl-4
+                        .card.mb-5.mb-xl-0
+                            .card-body.p-5
+                                .small.text-uppercase.fw-bold Purrfect Pals
+                                    i.bi.bi-star-fill.text-warning
+                                    .small.text-uppercase.fw-bold.text-muted 30 minutes
+                                .mb-3
+                                    span.display-4.fw-bold $25
+                                    span.text-muted / visit
+                                ul.list-unstyled.mb-4
+                                    li.mb-2
+                                        i.bi.bi-check.text-primary
+                                        strong 5 users
+                                    li.mb-2
+                                        i.bi.bi-check.text-primary
+                                        | 5GB storage
+                                    li.mb-2
+                                        i.bi.bi-check.text-primary
+                                        | Unlimited public projects
+                                    li.mb-2
+                                        i.bi.bi-check.text-primary
+                                        | Community access
+                                    li.mb-2
+                                        i.bi.bi-check.text-primary
+                                        | Unlimited private projects
+                                    li.mb-2
+                                        i.bi.bi-check.text-primary
+                                        | Dedicated support
+                                    li.mb-2
+                                        i.bi.bi-check.text-primary
+                                        | Free linked domain
+                                    li.text-muted
+                                        i.bi.bi-x
+                                        | Monthly status reports
+                                .d-grid
+                                    a.btn.btn-primary(href='#!') Choose plan
+                    // Pricing card enterprise
+                    .col-lg-6.col-xl-4
+                        .card
+                            .card-body.p-5
+                                .small.text-uppercase.fw-bold Furever Friends
+                                .small.text-uppercase.fw-bold.text-muted 60 minutes
+                                .mb-3
+                                    span.display-4.fw-bold $40
+                                    span.text-muted / visit
+                                ul.list-unstyled.mb-4
+                                    li.mb-2
+                                        i.bi.bi-check.text-primary
+                                        strong Unlimited users
+                                    li.mb-2
+                                        i.bi.bi-check.text-primary
+                                        | 5GB storage
+                                    li.mb-2
+                                        i.bi.bi-check.text-primary
+                                        | Unlimited public projects
+                                    li.mb-2
+                                        i.bi.bi-check.text-primary
+                                        | Community access
+                                    li.mb-2
+                                        i.bi.bi-check.text-primary
+                                        | Unlimited private projects
+                                    li.mb-2
+                                        i.bi.bi-check.text-primary
+                                        | Dedicated support
+                                    li.mb-2
+                                        i.bi.bi-check.text-primary
+                                        strong Unlimited
+                                        | linked domains
+                                    li.text-muted
+                                        i.bi.bi-check.text-primary
+                                        | Monthly status reports
+                                .d-grid
+                                    a.btn.btn-outline-primary(href='#!') Choose plan
+
+
+
+        
+        
+        
         // Call to action
         section.page-section.bg-dark.text-white
             .container.px-4.px-lg-5.text-center
