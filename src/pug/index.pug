@@ -11,7 +11,7 @@ html(lang='en')
         title Seattle Pet ❤️
 
         // Favicon
-        link(rel='icon', type='image/x-icon', href='assets/favicon.ico').jpg
+        link(rel='icon', type='image/x-icon', href='assets/favicon.png').png
 
         // Bootstrap Icons
         link(href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css', rel='stylesheet')
@@ -36,68 +36,60 @@ html(lang='en')
                     span.navbar-toggler-icon
                 #navbarResponsive.collapse.navbar-collapse
                     ul.navbar-nav.ms-auto.my-2.my-lg-0
+                        //- li.nav-item
+                        //-     a.nav-link(href='#services') Services
                         li.nav-item
-                            a.nav-link(href='#about') About
-                        li.nav-item
-                            a.nav-link(href='#services') Services
-                        li.nav-item
-                            a.nav-link(href='#pricing') Pricing
+                            a.nav-link(href='#pricing') Services and Pricing
                         li.nav-item
                             a.nav-link(href='#contact') Contact
+                        li.nav-item
+                            a.nav-link(href='#about') About
+                        
 
         // Masthead
         header.masthead
             .container.px-4.px-lg-5.h-100
                 .row.gx-4.gx-lg-5.h-100.align-items-center.justify-content-center.text-center
                     .col-lg-8.align-self-end
-                        h1.text-white.font-weight-bold Loving Care for Your Loved Ones
+                        h1.text-white.font-weight-bold We Handle Pets!
                         hr.divider
                     .col-lg-8.align-self-baseline
                         p.text-white-75.mb-5
-                            | Enjoy your vacation or time away and let us deal with the litter and walks.
-                        a.btn.btn-primary.btn-xl(href='#about') Read On
+                            | Enjoy your vacation or time away and let us deal with the food and litter and walks.
+                        a.btn.btn-primary.btn-xl(href='#pricing') Read On
 
-        // About
-        section#about.page-section.bg-primary
-            .container.px-4.px-lg-5
-                .row.gx-4.gx-lg-5.justify-content-center
-                    .col-lg-8.text-center
-                        h2.text-white.mt-0 You can count on us!
-                        hr.divider.divider-light
-                        p.text-white-75.mb-4
-                            | With a lifetime of pet care and years of professional service, we are ready to provide peace of mind. We are insured and excited to care for your little (or not!) ones.
-                        a.btn.btn-light.btn-xl(href='#services') Learn More!
 
-        // Services
-        section#services.page-section
-            .container.px-4.px-lg-5
-                h2.text-center.mt-0 Services
-                hr.divider
-                .row.gx-4.gx-lg-5
-                    .col-lg-3.col-md-6.text-center
-                        .mt-5
-                            .mb-2
-                                i.bi-gem.fs-1.text-primary
-                            h3.h4.mb-2 Sturdy Themes
-                            p.text-muted.mb-0 Our themes are updated regularly to keep them bug free!
-                    .col-lg-3.col-md-6.text-center
-                        .mt-5
-                            .mb-2
-                                i.bi-laptop.fs-1.text-primary
-                            h3.h4.mb-2 Up to Date
-                            p.text-muted.mb-0 All dependencies are kept current to keep things fresh.
-                    .col-lg-3.col-md-6.text-center
-                        .mt-5
-                            .mb-2
-                                i.bi-globe.fs-1.text-primary
-                            h3.h4.mb-2 Ready to Publish
-                            p.text-muted.mb-0 You can use this design as is, or you can make changes!
-                    .col-lg-3.col-md-6.text-center
-                        .mt-5
-                            .mb-2
-                                i.bi-heart.fs-1.text-primary
-                            h3.h4.mb-2 Made with Love
-                            p.text-muted.mb-0 Is it really open source if it's not made with love?
+| Copyright &copy; 2022 - Seattle Pet Love
+        //- // Services
+        //- section#services.page-section
+        //-     .container.px-4.px-lg-5
+        //-         h2.text-center.mt-0 Services
+        //-         hr.divider
+        //-         .row.gx-4.gx-lg-5
+        //-             .col-lg-3.col-md-6.text-center
+        //-                 .mt-5
+        //-                     .mb-2
+        //-                         i.bi-gem.fs-1.text-primary
+        //-                     h3.h4.mb-2 Sturdy Themes
+        //-                     p.text-muted.mb-0 Our themes are updated regularly to keep them bug free!
+        //-             .col-lg-3.col-md-6.text-center
+        //-                 .mt-5
+        //-                     .mb-2
+        //-                         i.bi-laptop.fs-1.text-primary
+        //-                     h3.h4.mb-2 Up to Date
+        //-                     p.text-muted.mb-0 All dependencies are kept current to keep things fresh.
+        //-             .col-lg-3.col-md-6.text-center
+        //-                 .mt-5
+        //-                     .mb-2
+        //-                         i.bi-globe.fs-1.text-primary
+        //-                     h3.h4.mb-2 Ready to Publish
+        //-                     p.text-muted.mb-0 You can use this design as is, or you can make changes!
+        //-             .col-lg-3.col-md-6.text-center
+        //-                 .mt-5
+        //-                     .mb-2
+        //-                         i.bi-heart.fs-1.text-primary
+        //-                     h3.h4.mb-2 Made with Love
+        //-                     p.text-muted.mb-0 Is it really open source if it's not made with love?
 
 
 
@@ -106,7 +98,7 @@ html(lang='en')
         section.bg-light.py-5.border-bottom
             .container.px-5.my-5
                 .text-center.mb-5
-                    h2.fw-bolder Pricing
+                    h2.fw-bolder Services and Pricing
                     p.lead.mb-0 Just the right amount of attention for your pet
                 .row.gx-5.justify-content-center
                     // Pricing card free
@@ -124,7 +116,7 @@ html(lang='en')
                                         strong Quick check-in
                                     li.mb-2
                                         i.bi.bi-check.text-primary
-                                        | Change food and water
+                                        | Change food/water
                                     li.mb-2
                                         i.bi.bi-check.text-primary
                                         | 🐱 Scoop poop
@@ -206,11 +198,11 @@ html(lang='en')
                                         | Dedicated support
                                     li.mb-2
                                         i.bi.bi-check.text-primary
-                                        strong Unlimited
+                                        strong Unlimited| Copyright &copy; 2022 - Seattle Pet Love
                                         | linked domains
                                     li.text-muted
                                         i.bi.bi-check.text-primary
-                                        | Monthly status reports
+                                        | Make your pet a TikTok star? 
                                 .d-grid
                                     a.btn.btn-outline-primary(href='#!') Choose plan
 
@@ -219,11 +211,11 @@ html(lang='en')
         
         
         
-        // Call to action
-        section.page-section.bg-dark.text-white
-            .container.px-4.px-lg-5.text-center
-                h2.mb-4 Free Download at Start Bootstrap!
-                a.btn.btn-light.btn-xl(href='https://startbootstrap.com/theme/creative/') Download Now!
+        //- // Call to action
+        //- section.page-section.bg-dark.text-white
+        //-     .container.px-4.px-lg-5.text-center
+        //-         h2.mb-4 Free Download at Start Bootstrap!
+        //-         a.btn.btn-light.btn-xl(href='https://startbootstrap.com/theme/creative/') Download Now!
 
         // Contact
         section#contact.page-section
@@ -324,11 +316,29 @@ html(lang='en')
                         i.bi-phone.fs-2.mb-3.text-muted
                         div +1 (555) 123-4567
 
+
+        // About
+        section#about.page-section.bg-primary
+            .container.px-4.px-lg-5
+                .row.gx-4.gx-lg-5.justify-content-center
+                    .col-lg-8.text-center
+                        h2.text-white.mt-0 You can count on us!
+                        hr.divider.divider-light
+                        p.text-white-75.mb-4
+                            | With a lifetime of pet care and years of professional service, we are ready to provide peace of mind. We are insured and excited to care for your little (or not!) ones.
+                        a.btn.btn-light.btn-xl(href='#services') Learn More!
+
+
+
         // Footer
         footer.bg-light.py-5
             .container.px-4.px-lg-5
+                .small.text-center
+                    | Copyright &copy; 2022 - Seattle Pet Love
+                    | Made with ❤️ and 😱 in Seattle  
                 .small.text-center.text-muted
-                    | Copyright &copy; 2021 - Company Name
+                    | (Coding is hard, but I got'er done!)                
+
 
         // Bootstrap core JS
         script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js')
