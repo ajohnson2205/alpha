@@ -129,7 +129,8 @@ html(lang='en')
                                 //- .d-grid
                                 //-     a.btn.btn-outline-primary(href='#!') Choose plan
                     // Pricing card pro
-                    .col-lg-6.col-xl-4--
+                    .col-lg-6.col-xl-4
+                        .card
                             .card-body.p-5
                                 .small.text-uppercase.fw-bold Purrfect Pals
                                     i.bi.bi-star-fill.text-warning
@@ -171,7 +172,7 @@ html(lang='en')
                                 ul.list-unstyled.mb-4
                                     li.mb-2
                                         i.bi.bi-check.text-primary
-                                        strong Extended check-in -- let's snuggle!
+                                        strong Extended check-in — let's snuggle!
                                     li.mb-2
                                         i.bi.bi-check.text-primary
                                         | Change food/water
@@ -216,90 +217,90 @@ html(lang='en')
                         hr.divider
                         p.text-muted.mb-5
                             | Ready to get them pets sat? Call, message, or WhatsApp and we will get back to you as soon as possible!
-                .row.gx-4.gx-lg-5.justify-content-center.mb-5
-                    .col-lg-6
+                //- .row.gx-4.gx-lg-5.justify-content-center.mb-5
+                //-     .col-lg-6
 
-                        // * * * * * * * * * * * * * * *
-                        // * * SB Forms Contact Form * *                .small.text-center
-                        // * * * * * * * * * * * * * * *
+                //-         // * * * * * * * * * * * * * * *
+                //-         // * * SB Forms Contact Form * *                .small.text-center
+                //-         // * * * * * * * * * * * * * * *
 
-                        // This form is pre-integrated with SB Forms.
-                        // To make this form functional, sign up at
-                        // https://startbootstrap.com/solution/contact-forms
-                        // to get an API token!
+                //-         // This form is pre-integrated with SB Forms.
+                //-         // To make this form functional, sign up at
+                //-         // https://startbootstrap.com/solution/contact-forms
+                //-         // to get an API token!
 
-                        form#contactForm(data-sb-form-api-token='API_TOKEN')
+                //-         form#contactForm(data-sb-form-api-token='API_TOKEN')
 
-                            // Name input
-                            .form-floating.mb-3
-                                input#name.form-control(
-                                    type='text',
-                                    placeholder='Enter your name...',
-                                    data-sb-validations='required'
-                                )
-                                label(for='name') Full name
-                                .invalid-feedback(data-sb-feedback='name:required')
-                                    | A name is required.
+                //-             // Name input
+                //-             .form-floating.mb-3
+                //-                 input#name.form-control(
+                //-                     type='text',
+                //-                     placeholder='Enter your name...',
+                //-                     data-sb-validations='required'
+                //-                 )
+                //-                 label(for='name') Full name
+                //-                 .invalid-feedback(data-sb-feedback='name:required')
+                //-                     | A name is required.
 
-                            // Email address input
-                            .form-floating.mb-3
-                                input#email.form-control(
-                                    type='email',
-                                    placeholder='name@example.com',
-                                    data-sb-validations='required,email'
-                                )
-                                label(for='email') Email address
-                                .invalid-feedback(data-sb-feedback='email:required')
-                                    | An email is required.
-                                .invalid-feedback(data-sb-feedback='email:email')
-                                    | Email is not valid.
+                //-             // Email address input
+                //-             .form-floating.mb-3
+                //-                 input#email.form-control(
+                //-                     type='email',
+                //-                     placeholder='name@example.com',
+                //-                     data-sb-validations='required,email'
+                //-                 )
+                //-                 label(for='email') Email address
+                //-                 .invalid-feedback(data-sb-feedback='email:required')
+                //-                     | An email is required.
+                //-                 .invalid-feedback(data-sb-feedback='email:email')
+                //-                     | Email is not valid.
 
-                            // Phone number input
-                            .form-floating.mb-3
-                                input#phone.form-control(
-                                    type='tel',
-                                    placeholder='(123) 456-7890',
-                                    data-sb-validations='required'
-                                )
-                                label(for='phone') Phone number
-                                .invalid-feedback(data-sb-feedback='phone:required')
-                                    | A phone number is required.
+                //-             // Phone number input
+                //-             .form-floating.mb-3
+                //-                 input#phone.form-control(
+                //-                     type='tel',
+                //-                     placeholder='(123) 456-7890',
+                //-                     data-sb-validations='required'
+                //-                 )
+                //-                 label(for='phone') Phone number
+                //-                 .invalid-feedback(data-sb-feedback='phone:required')
+                //-                     | A phone number is required.
 
-                            // Message input
-                            .form-floating.mb-3
-                                textarea#message.form-control(
-                                    type='text',
-                                    placeholder='Enter your message here...',
-                                    style='height: 10rem;',
-                                    data-sb-validations='required'
-                                )
-                                label(for='message') Message
-                                .invalid-feedback(data-sb-feedback='message:required')
-                                    | A message is required.
+                //-             // Message input
+                //-             .form-floating.mb-3
+                //-                 textarea#message.form-control(
+                //-                     type='text',
+                //-                     placeholder='Enter your message here...',
+                //-                     style='height: 10rem;',
+                //-                     data-sb-validations='required'
+                //-                 )
+                //-                 label(for='message') Message
+                //-                 .invalid-feedback(data-sb-feedback='message:required')
+                //-                     | A message is required.
 
-                            // Submit success message
-                            //
-                            // This is what your users will see when the form
-                            // has successfully submitted
+                //-             // Submit success message
+                //-             //
+                //-             // This is what your users will see when the form
+                //-             // has successfully submitted
 
-                            #submitSuccessMessage.d-none
-                                .text-center.mb-3
-                                    .fw-bolder Form submission successful!
-                                    | To activate this form, sign up at
-                                    br
-                                    a(href='https://startbootstrap.com/solution/contact-forms') https://startbootstrap.com/solution/contact-forms
+                //-             #submitSuccessMessage.d-none
+                //-                 .text-center.mb-3
+                //-                     .fw-bolder Form submission successful!
+                //-                     | To activate this form, sign up at
+                //-                     br
+                //-                     a(href='https://startbootstrap.com/solution/contact-forms') https://startbootstrap.com/solution/contact-forms
 
-                            // Submit error message
-                            //
-                            // This is what your users will see when there is
-                            // an error submitting the form
+                //-             // Submit error message
+                //-             //
+                //-             // This is what your users will see when there is
+                //-             // an error submitting the form
 
-                            #submitErrorMessage.d-none
-                                .text-center.text-danger.mb-3 Error sending message!
+                //-             #submitErrorMessage.d-none
+                //-                 .text-center.text-danger.mb-3 Error sending message!
 
-                            // Submit Button
-                            .d-grid
-                                button#submitButton.btn.btn-primary.btn-xl.disabled(type='submit') Submit
+                //-             // Submit Button
+                //-             .d-grid
+                //-                 button#submitButton.btn.btn-primary.btn-xl.disabled(type='submit') Submit
 
                 .row.gx-4.gx-lg-5.justify-content-center
                     .col-lg-4.text-center.mb-5.mb-lg-0
